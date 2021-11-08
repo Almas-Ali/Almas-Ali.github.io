@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faffe3;
+}
+
+/* nav > ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    text-decoration-line: none;
+} */
+
+.nav {
+    background-color: #aceded;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.nav-link {
+    color: black;
+    z-index: 10;
+}
+.nav-link:hover {
+    color: #627ac9;
+    background-color: #ffc3a0;
+    border-radius: 12px;
+}
+
+.myabout {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    margin-left: 3px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #ff884386;
+    color: #364156;
+    padding: 12px;
+    position: relative;
+    width: 60%;
+}
+
+/* #almas {
+    background-image: url('../img/almas.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 500px;
+} */
+
+
+#myimg, #blob{
+    position: absolute;
+    top: -3%;
+    left: 58%;
+}
+
+#myimg {
+    z-index: 5;
+}
+
+#blob {
+    top: 50px;
+}
+
+
+footer {
+    background-color: #c9f299;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10;
+}
