@@ -1,27 +1,20 @@
-let mode = document.querySelector('#mode');
-let cmode = document.querySelector('#cmode');
-// console.log(mode);
+let mode = document.getElementById('mode');
+let sheet = document.getElementById('sheet');
 
-// console.log(cmode.href);
 
-// localStorage.setItem('theme', 'light');
+mode.addEventListener('click', function () {
 
-let getTheme = localStorage.getItem('themeX');
+    let getTheme = localStorage.getItem('themeX');
 
-if (getTheme == null) {
-    localStorage.setItem('themeX', 'light');
-}
+    if (getTheme === null) {
+        localStorage.setItem('themeX', 'light');
+    };
 
-function ChangeTheme() {
-    if (getTheme == 'light') {
+    if (getTheme === 'light') {
         localStorage.setItem('themeX', 'dark');
-        cmode.href = './static/css/light.css';
+        sheet.href = './static/css/dark.css';
     } else {
         localStorage.setItem('themeX', 'light');
-        cmode.href = './static/css/dark.css';
+        sheet.href = './static/css/light.css';
     }
-}
-
-mode.addEventListener("click", function(){
-    ChangeTheme()
 });

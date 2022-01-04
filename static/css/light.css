@@ -1,48 +1,87 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #faffe3;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #faffe3;
 }
 
-/* nav > ul {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    text-decoration-line: none;
-} */
+nav {
+  background-color: #555;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  font-size: 20px;
+}
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 10px;
+}
+nav ul li:hover:not(:last-child) {
+  background-color: mediumslateblue;
+  border-radius: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+
+button {
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+button:active {
+}
+
+.container {
+  padding-top: 63px;
+}
+
+/* 
 .nav {
     background-color: #aceded;
     margin-bottom: 10px;
     border-radius: 10px;
-}
+} */
 
-
+/* 
 .nav-link {
     color: black;
     z-index: 10;
-}
-.nav-link:hover {
+} */
+/* .nav-link:hover {
     color: #627ac9;
     background-color: #ffc3a0;
     border-radius: 12px;
-}
+} */
 
 .myabout {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .about {
-    margin-left: 3px;
-    border-radius: 10px;
-    font-size: 30px;
-    background-color: #ff884386;
-    color: #364156;
-    padding: 12px;
-    position: relative;
-    width: 60%;
+  margin-left: 3px;
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: #ff884386;
+  color: #364156;
+  padding: 12px;
+  position: relative;
+  width: 60%;
 }
 
 /* #almas {
@@ -53,26 +92,35 @@ body {
     background-size: 500px;
 } */
 
-
-#myimg, #blob{
-    position: absolute;
-    top: -3%;
-    left: 58%;
+#myimg,
+#blob {
+  position: absolute;
+  /* top: -2%; */
+  left: 60%;
 }
 
 #myimg {
-    z-index: 5;
+  top: 7%;
+  z-index: 2;
 }
 
 #blob {
-    top: 50px;
+  top: 100px;
 }
 
+.details {
+    padding-right: 40vw;
+    padding-left: 5px;
+}
 
 footer {
-    background-color: #c9f299;
-    color: black;
-    text-align: center;
-    padding: 10px 0;
-    z-index: 10;
+  background-color: aqua;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+@media (max-width:450px) {
+    .
 }
