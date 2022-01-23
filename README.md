@@ -7,4 +7,4 @@ Github		: [Github][2]<br>
 
 
 [1]: <http://almasali.me> "Md. Almas Ali"
-[1]: <https://github.com/Almas-Ali> "Md. Almas Ali"
+[2]: <https://github.com/Almas-Ali> "Md. Almas Ali"
