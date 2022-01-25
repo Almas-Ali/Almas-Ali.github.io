@@ -6,192 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./static/css/fontawesome-free/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="./static/css/main.css">
+  <link rel="stylesheet" href="./static/css/preloader.css">
+  <script src="./static/js/main.js" defer></script>
+  <script src="./static/js/preloader.js" defer></script>
+  <script src="./static/js/typer.js" defer></script>
   <title>Md. Almas Ali</title>
 </head>
 
 <body>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif, fantasy, cursive;
-      color: #fff;
-    }
-
-    body {
-      background-color: #606060;
-    }
-
-    nav {
-      background-color: #404040;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #fff;
-    }
-
-    nav ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin: 5px 3px;
-      padding: 5px 8px;
-      font-size: 20px;
-    }
-
-    nav ul li:hover {
-      background-color: #ab05;
-      border-radius: 12px;
-    }
-
-    footer {
-      background-color: #404040;
-      position: relative;
-      width: 100%;
-      bottom: 0;
-      text-align: center;
-      padding: 10px 0;
-      color: #fff;
-    }
-
-    footer p span {
-      color: rgb(243, 30, 30);
-    }
-
-    .my_img {
-      background-color: #26324a;
-      border-radius: 50%;
-      height: 250px;
-      width: 250px;
-      display: block;
-      margin: 10px auto;
-      border: 2px solid #0cbb80;
-    }
-
-    .my_img img {
-      height: auto;
-      width: 55%;
-      position: block;
-      margin: 12px 0 0 67px;
-      border-radius: 46px 78px 62px 40px;
-      pointer-events: none;
-    }
-
-    .connections {
-      text-align: center;
-    }
-
-    .connections ul {
-      margin-bottom: 10px;
-    }
-
-    .connections ul i {
-      font-size: 26px;
-      margin: 0 10px;
-    }
-
-    .connections ul i:hover {
-      color: lightsalmon;
-    }
-
-    .connections .title {
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-top: 20px;
-    }
-
-    .connections ul {
-      border: 1px solid #fff;
-      margin: 10px 20%;
-    }
-
-    .pro_level {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 10px;
-    }
-
-    .progressbar {
-      background-color: black;
-      border-radius: 13px;
-      /* (height of inner div) / 2 + padding */
-      padding: 2px;
-      border: 1px solid lightskyblue;
-      width: 250px;
-    }
-
-    .progressbar>div {
-      background-color: rgb(25, 247, 110);
-      width: 100%;
-      /* Adjust with JavaScript */
-      height: 20px;
-      border-radius: 10px;
-      color: #000;
-      animation: positive-move 2s;
-    }
-
-    @keyframes positive-move {
-      0% {
-        width: 0%
-      }
-    }
-
-    .my_name {
-      font-size: 30px;
-      text-align: center;
-    }
-
-    .introduction {
-      margin-bottom: 30px;
-    }
-
-    .bio {
-      text-align: center;
-    }
-
-    .site_logo {
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      position: absolute;
-      margin: 5px 0;
-      font-size: 20px;
-    }
-  </style>
-
   <header>
     <nav>
-      <a href="#" class="site_logo">
-        < Md. Almas Ali />
-      </a>
       <ul>
+        <a href="#" class="site_logo">
+          < Md. Almas Ali />
+        </a>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#">Projects</a></li>
       </ul>
     </nav>
   </header>
+
+  <div class="bg-color">
+    <canvas id="preloader" width="200" height="200"></canvas>
+  </div>
 
   <main>
     <div class="introduction">
       <div class="my_img">
         <img src="./static/img/author.png" alt="Md. Almas Ali" title="Md. Almas Ali">
       </div>
-      <p class="my_name">Md. Almas Ali</p>
-      <p class="bio"> A Programmer & A Web Developer.
+      <p class="my_name glow">Md. Almas Ali</p>
+      <p class="bio"> A
+        <span class="typewrite bio" data-type='["Developer","Programmer", "Software Engineer", "Muslim"]' data-period="1000">
+        </span>
       </p>
     </div>
 
-    <div class="connections">
+    <div class="connections" id="skills">
+      <p class="title skills">Skills</p>
       <ul class="programming_languages">
         <p class="title">Pogramming Languages</p>
 
@@ -375,14 +230,6 @@
   <footer>
     <p>Made with <span title="love">&#10084;&#65039;</span> by Md. Almas Ali</p>
   </footer>
-
-  <script>
-    let value = document.getElementsByClassName('persent');
-    for (let index = 0; index < value.length; index++) {
-      // const element = value[index];
-      value[index].style.width = value[index].innerText;
-    }
-  </script>
 
 </body>
 
