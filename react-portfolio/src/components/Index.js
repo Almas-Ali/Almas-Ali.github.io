@@ -1,6 +1,16 @@
 import author from '../img/author.png';
+import React, { useEffect } from 'react';
 
 export default function Index() {
+
+  useEffect(() => {
+    let value = document.getElementsByClassName('persent');
+    for (let index = 0; index < value.length; index++) {
+      // const element = value[index];
+      value[index].style.width = value[index].innerText;
+    }
+  }, []);
+
   return (
     <>
       <main>
@@ -95,7 +105,7 @@ export default function Index() {
 
           <ul className="backend_framework">
             <p className="title">Backend Framework</p>
-            
+
             <div className="pro_level">
               <i className="fa-brands fa-laravel" title="Laravel"></i>
               <div className="progressbar">

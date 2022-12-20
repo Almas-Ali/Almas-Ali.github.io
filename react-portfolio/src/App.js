@@ -8,13 +8,14 @@ import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import Projects from './components/Projects.js';
 import Skills from './components/Skills.js';
+import Tutorials from './components/Tutorials.js';
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
-import './css/main.css?version=1.0.6';
-import './css/preloader.css?version=1.0.3';
+import './css/main.css?version=1.0.7';
+import './css/preloader.css?version=1.0.4';
 import './js/main.js';
 import './js/typer.js';
 
@@ -45,6 +46,14 @@ export default function App() {
             <>
               <Header />
               <Index />
+              <Footer />
+            </>
+          } />
+
+          <Route exact path="/tutorials" element={
+            <>
+              <Header />
+              <Tutorials />
               <Footer />
             </>
           } />

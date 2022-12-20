@@ -12,9 +12,11 @@ export default function layout() {
                             {"< Md.Almas Ali />"}
                         </Link>
                         <li><Link to="/">Home</Link></li>
+                        <li><Link to="/tutorials">Tutorials</Link></li>
                         <li><Link to="/skills">Skills</Link></li>
                         <li><Link to="/projects">Projects</Link></li>
                         <li><Link to="/about">About</Link></li>
+                        {/* <li className="colaps_btn">☰</li> */}
                     </ul>
                 </nav>
             </header>
