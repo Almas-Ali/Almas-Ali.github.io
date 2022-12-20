@@ -17,7 +17,7 @@ import {
 import './css/main.css?version=1.0.7';
 import './css/preloader.css?version=1.0.4';
 import './js/main.js';
-import './js/typer.js';
+// import './js/typer.js';
 
 
 export default function App() {
