@@ -14,6 +14,11 @@ body {
   background-color: #23263b;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 nav {
   background-color: #1f2937bb;
   height: 45px;
@@ -89,7 +94,7 @@ footer p span {
   height: 250px;
   width: 250px;
   display: block;
-  margin: 10px auto;
+  margin: 20px auto;
   border: 2px solid #444444;
 }
 
